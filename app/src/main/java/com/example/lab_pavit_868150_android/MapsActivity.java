@@ -48,7 +48,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -84,10 +83,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         // Update the title of the marker
                         updatedMarker.setTitle(markerAddress);
                         addressesList.add(markerAddress);
-                        Intent resultIntent = new Intent();
-                        resultIntent.putExtra("markerAddress", markerAddress);
-                        setResult(RESULT_OK, resultIntent);
-//                        finish();
+
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

@@ -62,7 +62,7 @@ public class LocationListActivity extends AppCompatActivity {
 
     private void showInputDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Add Location");
+        builder.setTitle("Add Data to see Data Persistence");
         final EditText input = new EditText(this);
         input.setInputType(InputType.TYPE_CLASS_TEXT);
         builder.setView(input);
